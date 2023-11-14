@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tarefa js</title>
+</head>
+
+<body>
+
+</body>
+
+
+<script>
+  document.body.style.backgroundColor = "#F0F0F0";
+  const main = document.createElement("main")
+  main.id = 'main'
+  document.body.appendChild(main)
+  document.getElementById("main").style.width = "70%";
+  document.getElementById("main").style.padding = "20px";
+  document.getElementById("main").style.paddingBottom = "80px";
+  document.getElementById("main").style.backgroundColor = "white"
+  document.getElementById("main").style.boxShadow = "12px 12px 12px rgba(50, 50, 50, 0.4)";
+  // document.getElementById("main").style.margin = "50px";
+  document.getElementById("main").style.marginBottom = "10px";
+  document.getElementById("main").style.marginTop = "30px";
+  document.getElementById("main").style.marginLeft = "100px";
+  document.getElementById("main").style.borderRadius = "15px";
+  document.getElementById("main").style.fontFamily = "sans-serif";
+
+  const h1 = document.createElement("h1")
+  h1.innerHTML += '<h1>Cadastro de Usuário</h1>'
+  h1.id = "id_h1"
+  main.appendChild(h1)
+  document.getElementById("id_h1").style.fontSize = "15px";
+
+  const h2 = document.createElement("h2")
+  h2.innerHTML += '<h2>Preencha o formulário abaixo para se cadastrar:</h2>'
+  h2.id = "id_h2"
+  main.appendChild(h2)
+  document.getElementById("id_h2").style.color = "DimGray";
+  document.getElementById("id_h2").style.fontSize = "12px";
+
+  const form = document.createElement("form")
+  form.id = "form"
+  form.style.marginLeft = '30px'
+  main.appendChild(form);
+
+
+  const nomeLabel = document.createElement("label");
+  nomeLabel.id = "nome_label"
+  nomeLabel.for = "nome";
+  nomeLabel.innerText = "Nome: ";
+  form.appendChild(nomeLabel)
+  document.getElementById("nome_label").style.fontWeight = "bold";
+  document.getElementById("nome_label").style.display = "inline-block";
+  document.getElementById("nome_label").style.width = "55%";
+  document.getElementById("nome_label").style.padding = "10px"
+
+  const nomeInput = document.createElement("input")
+  nomeInput.setAttribute("id", "nome_input")
+  nomeInput.setAttribute("type", "text")
+  form.appendChild(nomeInput)
+  form.innerHTML += "<br>"
+  document.getElementById("nome_input").style.margin = "10px"
+  document.getElementById("nome_input").style.marginRight = "25px"
+  document.getElementById("nome_input").style.padding = "10px"
+  document.getElementById("nome_input").style.borderRadius = "7px"
+  document.getElementById("nome_input").style.width = "35%"
+  document.getElementById("nome_input").style.borderCollapse = "collapse"
+  document.getElementById("nome_input").style.border = "1px solid silver"
+  document.getElementById("nome_input").style.display = "inline-block";
+
+
+  const emailLabel = document.createElement("label");
+  emailLabel.id = "email_label"
+  emailLabel.for = "email";
+  emailLabel.innerText = "E-mail: ";
+  form.appendChild(emailLabel)
+  document.getElementById("email_label").style.fontWeight = "bold";
+  document.getElementById("email_label").style.display = "inline-block";
+  document.getElementById("email_label").style.width = "55%";
+  document.getElementById("email_label").style.padding = "10px"
+
+  const emailInput = document.createElement("input")
+  emailInput.setAttribute("id", "email_input")
+  emailInput.setAttribute("type", "email")
+  form.appendChild(emailInput)
+  form.innerHTML += "<br>"
+  document.getElementById("email_input").style.margin = "10px"
+  document.getElementById("email_input").style.padding = "10px"
+  document.getElementById("email_input").style.borderRadius = "7px"
+  document.getElementById("email_input").style.width = "35%"
+  document.getElementById("email_input").style.borderCollapse = "collapse"
+  document.getElementById("email_input").style.border = "1px solid silver"
+  document.getElementById("email_input").style.display = "inline-block";
+
+
+  const senhaLabel = document.createElement("label");
+  senhaLabel.id = "senha_label"
+  senhaLabel.for = "senha";
+  senhaLabel.innerText = "Senha: ";
+  form.appendChild(senhaLabel)
+  document.getElementById("senha_label").style.fontWeight = "bold";
+  document.getElementById("senha_label").style.display = "inline-block";
+  document.getElementById("senha_label").style.width = "55%";
+  document.getElementById("senha_label").style.padding = "10px"
+
+  const senhaInput = document.createElement("input")
+  senhaInput.setAttribute("id", "senha_input")
+  senhaInput.setAttribute("type", "password")
+  form.appendChild(senhaInput)
+  form.innerHTML += "<br>"
+  document.getElementById("senha_input").style.margin = "10px"
+  document.getElementById("senha_input").style.padding = "10px"
+  document.getElementById("senha_input").style.borderRadius = "7px"
+  document.getElementById("senha_input").style.width = "35%"
+  document.getElementById("senha_input").style.borderCollapse = "collapse"
+  document.getElementById("senha_input").style.border = "1px solid silver"
+  document.getElementById("senha_input").style.display = "inline-block";
+
+
+  const confirmaSenhaLabel = document.createElement("label");
+  confirmaSenhaLabel.id = "confirmasenha_label"
+  confirmaSenhaLabel.for = "confirma senha";
+  confirmaSenhaLabel.innerText = "Confirmar senha: ";
+  form.appendChild(confirmaSenhaLabel)
+  document.getElementById("confirmasenha_label").style.fontWeight = "bold";
+  document.getElementById("confirmasenha_label").style.display = "inline-block";
+  document.getElementById("confirmasenha_label").style.width = "55%";
+  document.getElementById("confirmasenha_label").style.padding = "10px"
+
+  const confirmaSenhaInput = document.createElement("input")
+  confirmaSenhaInput.setAttribute("id", "confirmasenha_Input")
+  confirmaSenhaInput.setAttribute("type", "password")
+  form.appendChild(confirmaSenhaInput)
+  form.innerHTML += "<br>"
+  document.getElementById("confirmasenha_Input").style.margin = "10px"
+  document.getElementById("confirmasenha_Input").style.padding = "10px"
+  document.getElementById("confirmasenha_Input").style.borderRadius = "7px"
+  document.getElementById("confirmasenha_Input").style.width = "35%"
+  document.getElementById("confirmasenha_Input").style.borderCollapse = "collapse"
+  document.getElementById("confirmasenha_Input").style.border = "1px solid silver"
+  document.getElementById("confirmasenha_Input").style.display = "inline-block";
+
+
+  const cidadeLabel = document.createElement("label");
+  cidadeLabel.id = "cidade_label"
+  cidadeLabel.for = "cidade";
+  cidadeLabel.innerText = "Cidade: ";
+  form.appendChild(cidadeLabel)
+  document.getElementById("cidade_label").style.fontWeight = "bold";
+  document.getElementById("cidade_label").style.display = "inline-block";
+  document.getElementById("cidade_label").style.width = "55%";
+  document.getElementById("cidade_label").style.padding = "10px"
+
+  const cidadeInput = document.createElement("input")
+  cidadeInput.setAttribute("id", "cidade_input")
+  cidadeInput.setAttribute("type", "text")
+  form.appendChild(cidadeInput)
+  form.innerHTML += "<br>"
+  document.getElementById("cidade_input").style.margin = "10px"
+  document.getElementById("cidade_input").style.padding = "10px"
+  document.getElementById("cidade_input").style.borderRadius = "7px"
+  document.getElementById("cidade_input").style.width = "35%"
+  document.getElementById("cidade_input").style.borderCollapse = "collapse"
+  document.getElementById("cidade_input").style.border = "1px solid silver"
+  document.getElementById("cidade_input").style.display = "inline-block";
+
+
+  const telefoneLabel = document.createElement("label");
+  telefoneLabel.id = "telefone_label"
+  telefoneLabel.for = "telefone";
+  telefoneLabel.innerText = "Telefone: ";
+  form.appendChild(telefoneLabel)
+  document.getElementById("telefone_label").style.fontWeight = "bold";
+  document.getElementById("telefone_label").style.display = "inline-block";
+  document.getElementById("telefone_label").style.width = "55%";
+  document.getElementById("telefone_label").style.padding = "10px"
+
+  const telefoneInput = document.createElement("input")
+  telefoneInput.setAttribute("id", "telefone_input")
+  telefoneInput.setAttribute("type", "text")
+  form.appendChild(telefoneInput)
+  form.innerHTML += "<br>"
+  document.getElementById("telefone_input").style.margin = "10px"
+  document.getElementById("telefone_input").style.padding = "10px"
+  document.getElementById("telefone_input").style.borderRadius = "7px"
+  document.getElementById("telefone_input").style.width = "35%"
+  document.getElementById("telefone_input").style.borderCollapse = "collapse"
+  document.getElementById("telefone_input").style.border = "1px solid silver"
+  document.getElementById("telefone_input").style.display = "inline-block";
+
+  const cadastrarBtn = document.createElement("input")
+  cadastrarBtn.setAttribute("type", "submit")
+  cadastrarBtn.setAttribute("value", "Cadastrar")
+  cadastrarBtn.setAttribute("id", "cadastrar_btn")
+  form.appendChild(cadastrarBtn)
+  cadastrarBtn.style.float = "right"
+  cadastrarBtn.style.color = "white"
+  cadastrarBtn.style.backgroundColor = "#0066CC"
+  cadastrarBtn.style.marginTop = "20px"
+  cadastrarBtn.style.border = "none"
+  cadastrarBtn.style.padding = "15px 30px"
+
+  const limparBtn = document.createElement("input")
+  limparBtn.setAttribute("type", "submit")
+  limparBtn.setAttribute("value", "Limpar")
+  limparBtn.setAttribute("id", "limpar_btn")
+  form.appendChild(limparBtn)
+  limparBtn.style.float = "right"
+  limparBtn.style.color = "white"
+  limparBtn.style.backgroundColor = "#CC9933"
+  limparBtn.style.marginTop = "20px"
+  limparBtn.style.marginRight = "5px"
+  limparBtn.style.border = "none"
+  limparBtn.style.padding = "15px 30px"
+
+
+
+</script>
+
+</html>
